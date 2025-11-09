@@ -1,5 +1,7 @@
 ############# CUSTOM GITIGNORE #############
 mig_dev/
+.DS_Store
+.DS_Store/
 
 
 

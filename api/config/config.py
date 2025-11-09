@@ -8,6 +8,7 @@ load_dotenv(override=True)
 
 class Config:
     FLASK_ENV = os.getenv('FLASK_ENV')
+    PORT = os.getenv('PORT')
     SECRET_KEY = os.getenv('SECRET_KEY')
     FLASK_ADMIN_SWATCH = os.getenv('FLASK_ADMIN_SWATCH', 'superhero')
     
