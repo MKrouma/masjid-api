@@ -1,3 +1,9 @@
+############# CUSTOM GITIGNORE #############
+mig_dev/
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
