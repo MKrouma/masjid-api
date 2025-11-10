@@ -24,23 +24,22 @@ prayer_ns = PrayerRessource.prayer_ns
 @prayer_ns.route('')
 class GetPrayers(Resource):
 
-    @prayer_ns.doc(
-        'Get All Prayers',
-        responses={
-            200: "Success.",
-            400: "Bad request.",
-            401: "Unauthorized.",
-            403: "Forbidden."
-        },
-    )
     def get(self):
         """
             Get all prayers
         """
+        payload = {
+            "prayers" : Prayer.to_collection_dict()
+        }
+
+        # add next prayer
+        next_prayer = Prayer.get_next_prayer()
+        payload["next_prayer"] = next_prayer.to_dict()
+
         return make_response(jsonify(
             {
                 'message': 'Prayers fetched successfully.', 
-                'payload': Prayer.to_collection_dict()
+                'payload': payload
             }), 
             200
         )

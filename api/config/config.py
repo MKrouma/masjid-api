@@ -32,7 +32,7 @@ class TestConfig(Config):
 class StageConfig(Config):
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = os.getenv('STAGE_DATABASE_URI')
-    CORS_ORIGINS = []
+    CORS_ORIGINS = ['*']
 
 
 class ProdConfig(Config):

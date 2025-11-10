@@ -1,35 +1,35 @@
 [
   {
     "name": "Fajr",
-    "description": "Dawn prayer performed before sunrise",
+    "description": "Prière de l'aube effectuée avant le lever du soleil",
     "order": 1,
     "start_hour": "05:00:00",
     "end_hour": "06:00:00"
   },
   {
     "name": "Dhuhr",
-    "description": "Midday prayer performed after the sun passes its zenith",
+    "description": "Prière de midi effectuée après que le soleil ait passé son zénith",
     "order": 2,
     "start_hour": "12:00:00",
     "end_hour": "13:00:00"
   },
   {
     "name": "Asr",
-    "description": "Afternoon prayer performed in the late afternoon",
+    "description": "Prière de l'après-midi effectuée en fin d'après-midi",
     "order": 3,
     "start_hour": "15:00:00",
     "end_hour": "16:00:00"
   },
   {
     "name": "Maghrib",
-    "description": "Sunset prayer performed just after sunset",
+    "description": "Prière du coucher du soleil effectuée juste après le coucher du soleil",
     "order": 4,
     "start_hour": "18:00:00",
     "end_hour": "19:00:00"
   },
   {
     "name": "Isha",
-    "description": "Night prayer performed after twilight has disappeared",
+    "description": "Prière de la nuit effectuée après la disparition du crépuscule",
     "order": 5,
     "start_hour": "19:00:00",
     "end_hour": "00:00:00"
